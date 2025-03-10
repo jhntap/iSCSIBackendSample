@@ -6,7 +6,7 @@ This repository includes the following sample Kubernetes configuration files:
 
 * sc-iscsi.yaml: A sample StorageClass resource configured to provision storage from a NetApp ONTAP system using the iSCSI protocol.
 * iscsi-pvc.yaml: A sample PersistentVolumeClaim (PVC) that requests storage from the defined StorageClass.
-* pod-iscsi-block.yaml: A sample pod definition that mounts the provisioned iSCSI LUN as a block device.
+* pod-iscsi-block-ubuntu.yaml: A sample pod definition that mounts the provisioned iSCSI LUN as a block device.
 
 ### Testing Environment
 All samples have been tested with the following environment:
