@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod-with-block-volume
+spec:
+  containers:
+    - name: block-pvc-container
+      image: ubuntu:latest
+      command: ["/bin/sh", "-c"]
+      args: [ "tail -f /dev/null" ]
+      volumeDevices:
+        - name: blockdev
+          devicePath: /dev/xvda
+  volumes:
+    - name: blockdev
+      persistentVolumeClaim:
+        claimName: iscsi-block-pvc
+nodeSelector:
+    kubernetes.io/os: linux
