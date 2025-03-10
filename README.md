@@ -15,4 +15,15 @@ All samples have been tested with the following environment:
 
 Please note that while these samples have been tested in a specific environment, they may need to be adjusted for use in other setups.
 
+### Sample Output
+You can list iSCSI LUN inside the pod. But it seems devicePath(/dev/xvda) on pod configuration is ignored.
+```
+root@pod-with-block-volume:/# lsblk -S
+NAME
+    HCTL       TYPE VENDOR   MODEL             REV SERIAL TRAN
+sda 0:0:0:0    disk VMware   Virtual disk     2.0
+sdb 33:0:0:0   disk NETAPP   LUN C-Mode       9141        iscsi
+sdc 34:0:0:0   disk NETAPP   LUN C-Mode       9141        iscsi
+sr0 3:0:0:0    rom  NECVMWar VMware SATA CD00 1.00        sata
+```
 
