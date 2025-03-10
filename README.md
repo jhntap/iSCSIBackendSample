@@ -1,6 +1,5 @@
 # Kubernetes iSCSI LUN Mounting Samples with NetApp ONTAP
-contains a collection of sample configuration files for Kubernetes, which demonstrate how to mount an iSCSI LUN from NetApp ONTAP as a block device in a pod. 
-These samples are particularly useful for storage administrators and developers who want to test the integration of Kubernetes with NetApp storage solutions using the Trident storage orchestrator.
+contains a collection of sample configuration files for Kubernetes, which demonstrate how to mount an iSCSI LUN from NetApp ONTAP as **a block device** in a pod. 
 
 ### Repository Contents
 This repository includes the following sample Kubernetes configuration files:
@@ -12,8 +11,7 @@ This repository includes the following sample Kubernetes configuration files:
 ### Testing Environment
 All samples have been tested with the following environment:
 
-* Trident with Kubernetes Advanced v6.0 <https://labondemand.netapp.com/node/878>
-* Trident 24.02.0 & Kubernetes 1.29.4
+* Trident with Kubernetes Advanced v6.0 (Trident 24.02.0 & Kubernetes 1.29.4) <https://labondemand.netapp.com/node/878>
 
 Please note that while these samples have been tested in a specific environment, they may need to be adjusted for use in other setups.
 
