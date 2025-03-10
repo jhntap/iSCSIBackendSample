@@ -15,5 +15,5 @@ spec:
     - name: blockdev
       persistentVolumeClaim:
         claimName: iscsi-block-pvc
-nodeSelector:
-    kubernetes.io/os: linux
+  nodeSelector:
+      kubernetes.io/os: linux
